@@ -75,8 +75,6 @@ print(f"El número que has introducido es {numero}")
 
 
 
-import os
-os.system("clear")
 ###
 # EJERCICIOS (while)
 ###
@@ -106,7 +104,6 @@ while contador <= 20:
         pares += contador
 print(pares)
 
-"""
 
 # Ejercicio 3: Factorial de un número
 # Pide al usuario que introduzca un número entero positivo.
@@ -114,20 +111,26 @@ print(pares)
 # El factorial de un número entero positivo es el producto de todos los números del 1 al ese número. Por ejemplo, el factorial de 5
 # 5! = 5 x 4 x 3 x 2 x 1 = 120.
 #print("\nEjercicio 3:")
-import os
-os.system("clear")
-factor = int (input('Ingrese un numero entero positivo'))
-contador = 1
+
+factor = int (input('Ingrese un numero entero positivo  '))
+contador= factor
+factor_original =factor
 
 while factor >= 1:
-    contador = factor * factor-1
-    print(contador)
-    if factor ==1:
-        break
-    print(factor)  
-    factor-=1
+  if(factor == 1):
+   break
+  contador = contador * (factor -1)
+  print(factor,contador)
   
-print(factor,contador)
+  factor -= 1
+  
+  
+print(f"El factorial de {factor_original} es {contador}")
+#print(os.system("factor,contador"))
+
+import os
+os.system("clear")
+
 
 # Ejercicio 4: Validación de contraseña
 # Pide al usuario que introduzca una contraseña.
@@ -136,11 +139,38 @@ print(factor,contador)
 # Si la contraseña es válida, imprime "Contraseña válida".
 #print("\nEjercicio 4:")
 
+contraseña = input("Ingrese una contraseña segura de Minimo 8 caracteres  ")
+
+while len(contraseña) < 8:
+  print("La contraseña debe tener al menos 8 caracteres")
+  contraseña = input("Ingrese una contraseña segura de Minimo 8 caracteres  ")
+else: 
+  print("contraseña Valida")
+
+
+
 # Ejercicio 5: Tabla de multiplicar
 # Pide al usuario que introduzca un número.
 # Imprime la tabla de multiplicar de ese número (del 1 al 10) usando un bucle while.
 #print("\nEjercicio 5:")
 
+numero= int (input("Ingrese un numero entero positivo  "))
+contador = 1
+
+while contador <= 10:
+    print(numero, "x", contador, "=", numero * contador)
+    contador += 1
+"""
+
+  
+  
+import os
+os.system("clear")
+
+numero = int(input("Ingrese un numero entero positivo  "))
+iteraciones=numero
+
+while 
 # Ejercicio 6: Números primos hasta N
 # Pide al usuario que introduzca un número entero positivo N.
 # Imprime todos los números primos menores o iguales que N usando un bucle while.
