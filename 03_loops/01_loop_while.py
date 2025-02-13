@@ -160,17 +160,42 @@ contador = 1
 while contador <= 10:
     print(numero, "x", contador, "=", numero * contador)
     contador += 1
+
 """
 
-  
-  
+
+import math
+
 import os
 os.system("clear")
 
 numero = int(input("Ingrese un numero entero positivo  "))
-iteraciones=numero
+iteraciones2=2
+primos=[]
 
-while 
+while iteraciones2 <= numero:
+   raiz= math.floor(math.sqrt(iteraciones2))
+   iteraciones=2
+   
+   if(iteraciones2 == 2):
+       primos.append(iteraciones2)
+       iteraciones2 += 1
+       continue
+   
+   while iteraciones <= raiz:
+     
+     if(iteraciones2 % iteraciones == 0):
+       print("El numero no es primo")
+       break 
+     iteraciones += 1
+   else:
+     print("El numero es primo" )
+     primos.append(iteraciones2)
+   iteraciones2 += 1
+
+
+print(primos)
+print(numero)
 # Ejercicio 6: Números primos hasta N
 # Pide al usuario que introduzca un número entero positivo N.
 # Imprime todos los números primos menores o iguales que N usando un bucle while.

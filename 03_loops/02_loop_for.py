@@ -2,6 +2,7 @@
 # 02 - Bucles (for)
 # Permiten ejecutar un bloque de código repetidamente mientras ITERA un iterable o una lista
 ###
+"""
 
 print("\nBucle for:")
 
@@ -55,6 +56,10 @@ print(animales_mayus)
 pares = [num for num in [1, 2, 3, 4, 5, 6] if num % 2 == 0]
 print(pares)
 
+
+import os
+os.system("clear")
+
 ###
 # EJERCICIOS (for)
 ###
@@ -63,11 +68,23 @@ print(pares)
 # Imprime todos los números pares del 2 al 20 (inclusive) usando un bucle for.
 print("\nEjercicio 1:")
 
+for i in range(2,21,2):
+  print(i)
+"""
+
+import os
+os.system("clear")
+
 # Ejercicio 2: Calcular la media de una lista
 # Dada la siguiente lista de números:
 # numeros = [10, 20, 30, 40, 50]
 # Calcula la media de los números usando un bucle for.
 print("\nEjercicio 2:")
+numeros = [10, 20, 30, 40, 50]
+media= len(numeros) // 2
+print(numeros[media])
+
+
 
 # Ejercicio 3: Buscar el máximo de una lista
 # Dada la siguiente lista de números:
