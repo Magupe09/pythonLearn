@@ -7,4 +7,5 @@
 -variables
 -Numbers
 -Booleanos
--strings
+-strings 
+ 
