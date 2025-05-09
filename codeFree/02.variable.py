@@ -4,8 +4,8 @@ print(name)
 age=12
 # age=float(12)
 # age=int("20")
-print(age)
-print(isinstance(name,str)) # print(isinstance(age,int)),print(isinstance(age,float))
+#print(age)
+#print(isinstance(name,str)) # print(isinstance(age,int)),print(isinstance(age,float))
 
 '''
 complex for complex numbers
@@ -17,7 +17,7 @@ dict for dictionaries
 set for sets
 '''
 ## OPERATORS 
-
+'''
 age=8
 age +=8
 print(age)
@@ -51,14 +51,36 @@ def is_adult2(age):
 "Beau"
 'Beau'
 name = "Beau"
+name1="Mauro"
 phrase = name + "  Is my name"
-print("beau".lower())
-print("beau".upper())
-print("beau".title())
+print("beau".lower())#Minusculas
+print("beau".upper())#Mayusculas
+print("beau".title())#Convierte la primera letra en mayusculas para titulos
+print(name1[1:2])
+print("au" in name)
 
+'''
+#Booleans
 
+done = True
+done = False
+print(type(done)==bool)
+if done:
+    print("Yes")
+else:
+    print("No")
 
+book_1_read = False
+book_2_read = False
 
+read_any_book=any([book_1_read,book_2_read])
+print(read_any_book)
+
+ingredients_purchased = True
+meal_cooked = False
+
+ready_to_serve = all([ingredients_purchased,meal_cooked])
+print(ready_to_serve)
 
 
 
