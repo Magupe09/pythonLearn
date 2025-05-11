@@ -59,7 +59,7 @@ print("beau".title())#Convierte la primera letra en mayusculas para titulos
 print(name1[1:2])
 print("au" in name)
 
-'''
+
 #Booleans
 
 done = True
@@ -81,6 +81,34 @@ meal_cooked = False
 
 ready_to_serve = all([ingredients_purchased,meal_cooked])
 print(ready_to_serve)
+
+
+num1 = 2+3j
+num2= complex(2,3)
+print(num2.real,num2.imag)
+'''
+
+#Build function
+print(abs(5.5))
+print(round(5.5))
+
+#Enums
+from enum import Enum
+class State(Enum):
+    INACTIVE=0
+    ACTIVE =1
+print(State.ACTIVE.value)
+print(State(1))
+print(list(State))
+# Control statemens
+condition= True
+name = "richard"
+if condition == True:
+    print("Is true")
+elif name == "richard":
+    print("Is richard")
+else :
+    print("condition is false:")
 
 
 
