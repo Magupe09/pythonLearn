@@ -86,7 +86,7 @@ print(ready_to_serve)
 num1 = 2+3j
 num2= complex(2,3)
 print(num2.real,num2.imag)
-'''
+
 
 #Build function
 print(abs(5.5))
@@ -109,6 +109,35 @@ elif name == "richard":
     print("Is richard")
 else :
     print("condition is false:")
+
+ 
+dogs0=[] # print("roger" in dogs) = False
+dogs=["roger",1,"syd",True]
+#print("roger" in dogs)
+#print(dogs[0])
+dogs[2]="Mauro"
+#print(dogs)
+#print(dogs[1:3])
+#print(len(dogs))
+dogs.append("Juda")
+#print(dogs)
+dogs.extend(["Juda",5])
+print(dogs)
+dogs.remove("Mauro")
+print(dogs)
+print(dogs.pop())
+'''
+
+items=["roger",1,"syd",True]
+items.insert(2,"Test")
+items[1:1]=["Test1","Test2"]
+print(items) 
+
+#SORTING LISTS
+
+items2=["roger","HELO","syd","HEY"]
+items2.sort()
+print(items2) 
 
 
 
