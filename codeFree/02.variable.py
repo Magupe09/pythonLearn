@@ -126,7 +126,7 @@ print(dogs)
 dogs.remove("Mauro")
 print(dogs)
 print(dogs.pop())
-'''
+
 
 items=["roger",1,"syd",True]
 items.insert(2,"Test")
@@ -134,10 +134,20 @@ items[1:1]=["Test1","Test2"]
 print(items) 
 
 #SORTING LISTS
-
+itemsCopi=items[:]#copia el array
 items2=["roger","HELO","syd","HEY"]
 items2.sort()
 print(items2) 
+'''
+#TUPLES
+#DICTIONARIES
+#Sets
+
+set1={"Roger","Syd"}
+set2={"Roger"}
+intersect=set1 & set2
+print(intersect)
+
 
 
 
