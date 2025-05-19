@@ -138,7 +138,7 @@ itemsCopi=items[:]#copia el array
 items2=["roger","HELO","syd","HEY"]
 items2.sort()
 print(items2) 
-'''
+
 #TUPLES
 #DICTIONARIES
 #Sets
@@ -147,6 +147,38 @@ set1={"Roger","Syd"}
 set2={"Roger"}
 intersect=set1 & set2
 print(intersect)
+#FUNTIONS
+def hello(name,age):
+    print("hola " + name + " YOu are " + str(age) + "Years old")
+    return name
+
+
+hello("Mauro " ,30 )
+
+
+def count():
+    count =0
+    def increment():
+        nonlocal count
+        count = count +1
+        print(count)
+    increment()
+count()
+#print(count())
+'''
+def count():
+    count =0
+    def increment():
+        nonlocal count
+        count = count +1
+        return count
+    return increment
+increment=count()
+print(increment())
+
+print(increment())
+
+print(increment())
 
 
 
