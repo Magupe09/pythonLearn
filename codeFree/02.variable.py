@@ -165,7 +165,7 @@ def count():
     increment()
 count()
 #print(count())
-'''
+
 def count():
     count =0
     def increment():
@@ -180,6 +180,45 @@ print(increment())
 
 print(increment())
 
+
+
+age=8
+print(age.real)
+print(age.imag)
+print(age.bit_length())
+
+#Objects
+items=[1,2,3,4,5]
+items.append(6)
+items.pop()
+items.pop(0)
+items.clear()
+items.count(1)
+#items.index(1)
+items.reverse()
+items.sort()
+items.copy()
+items.extend([7,8,9])
+items.insert(0,0)
+items.remove(0)
+items.pop()
+print(id(items))
+
+'''
+
+#Loops
+
+for i in range(10):
+    print(i,"o")
+
+
+while i < 10:
+    print(i,"oo")
+    i +=1
+
+items=["Roger","Syd","Mauro"]
+for index,item in enumerate(items):
+    print(index,item)
 
 
 
