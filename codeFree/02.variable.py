@@ -204,7 +204,7 @@ items.remove(0)
 items.pop()
 print(id(items))
 
-'''
+
 
 #Loops
 
@@ -219,6 +219,39 @@ while i < 10:
 items=["Roger","Syd","Mauro"]
 for index,item in enumerate(items):
     print(index,item)
+#Classes
+class Animal:
+    def eat(self,food):
+        print(f"{self.name} is eating {food}")
+        
+class Dog(Animal):
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def bark(self):
+        print("Woof")
+
+
+
+roger=Dog("Roger",8) 
+roger.eat("Dog food")
+
+'''
+#Modules
+#import dog
+#dog.bark()
+from dog import bark
+bark()
+import math
+print(math.pi)
+import argparse
+parser= argparse.ArgumentParser(
+    description="This program prints the name of my dogs"
+)
+print(parser)
+
+
+
 
 
 
