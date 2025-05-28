@@ -236,7 +236,7 @@ class Dog(Animal):
 roger=Dog("Roger",8) 
 roger.eat("Dog food")
 
-'''
+
 #Modules
 #import dog
 #dog.bark()
@@ -251,12 +251,49 @@ parser= argparse.ArgumentParser(
 print(parser)
 
 
-
-
-
+#Acepting arguments
+import argparse
+parser=argparse.ArgumentParser(
+    description='This programan print the name of my dogs'
+)
+parser.add_argument('-c','--color',metavar='color',required=True,choices={
+    'red','yellow'
+},help='the color to search for')
+args=parser.parse_args()
+print(args.color)
 
 #print("Mauro" in name,"aqui estoy")
 #print(sorted(name))
 
 #Dictionaries
- 
+
+
+#Lambda Functions
+
+lambda num : num *2
+multiply=lambda a,b : a*b
+print(multiply(2,4))
+
+#Map, filter, reduce
+numbers=[1,2,3]
+def double(a):
+    return a*2
+result=map(double,numbers)
+print(list(result))  
+
+
+numbers=[1,2,3]
+def isEven(n):
+    return n%2 == 0
+result = filter(isEven,numbers)
+print(list(result))
+
+'''
+expenses =[
+    ('Dinner',80),
+    ('Car repair',120)
+]
+sum= 0
+for expense in expenses:
+    sum+=expense[1]
+print(sum)
