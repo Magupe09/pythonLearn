@@ -53,4 +53,10 @@ finally:
 
 print(result)
 
- 
+if rank == 'A':
+    value = 11
+elif rank == 'j'
+    value = 10
+else:
+    value = rank
+
